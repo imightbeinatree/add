@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-  a := strconv.Atoi(os.Args[1])
-  b := strconv.Atoi(os.Args[2])
+  a, _ := strconv.Atoi(os.Args[1])
+  b, _ := strconv.Atoi(os.Args[2])
   result := strconv.Itoa(a + b)
   fmt.Println("{\"result\":\""+result+"\"}")
 }
