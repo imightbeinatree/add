@@ -10,5 +10,5 @@
 
 FROM scratch
 WORKDIR /
-ADD ./runner /runner
+ADD http://geec-client.s3.amazonaws.com/runner /runner
 ADD ./integer_add /integer_add
