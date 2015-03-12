@@ -9,4 +9,6 @@
 #################################################################
 
 FROM scratch
+WORKDIR /
+ADD ./runner /runner
 ADD ./integer_add /integer_add
