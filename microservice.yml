@@ -1,0 +1,23 @@
+microservice:
+  docker_image: 'imightbeinatree/integer_add'
+  docker_image_tag: '0.8'
+  command: '/integer_add [num1] [num2]'
+  inputs:
+    num1:
+      param_type: 'Numeric'
+      regex: '^[0-9]+$'
+      required: true
+    num2:
+      param_type: 'Numeric'
+      regex: '^[0-9]+$'
+      required: true
+  outputs:
+    result:
+      param_type: 'Numeric'
+  github_url: 'https://github.com/imightbeinatree/add'
+  docker_hub_url: 'https://registry.hub.docker.com/u/imightbeinatree/integer_add/'
+  tags: ['math', 'addition', 'integers']
+  category: 'math'
+  developer_name: 'imbiat'
+  developer_type: 'User'
+  

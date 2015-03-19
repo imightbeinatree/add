@@ -10,5 +10,5 @@
 
 FROM scratch
 WORKDIR /
-ADD http://geec-client.s3.amazonaws.com/runner /runner
+ADD ./microservice.yml /microservice.yml
 ADD ./integer_add /integer_add
