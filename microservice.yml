@@ -1,19 +1,24 @@
 microservice:
+  name: 'add'
+  description: 'adds two integers together!'
   docker_image: 'imightbeinatree/integer_add'
-  docker_image_tag: '0.8'
+  docker_image_tag: '0.9'
   command: '/integer_add [num1] [num2]'
   inputs:
     num1:
       param_type: 'Numeric'
       regex: '^[0-9]+$'
       required: true
+      description: 'first number to be added'
     num2:
       param_type: 'Numeric'
       regex: '^[0-9]+$'
       required: true
+      description: 'second number to be added'
   outputs:
     result:
       param_type: 'Numeric'
+      description: 'the result of adding num1 and num2'
   github_url: 'https://github.com/imightbeinatree/add'
   docker_hub_url: 'https://registry.hub.docker.com/u/imightbeinatree/integer_add/'
   tags: ['math', 'addition', 'integers']
