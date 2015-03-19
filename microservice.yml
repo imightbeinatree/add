@@ -16,11 +16,13 @@ microservice:
       param_type: 'Numeric'
       regex: '^[0-9]+$'
       required: true
+      secure: false
       description: 'first number to be added'
     num2:
       param_type: 'Numeric'
       regex: '^[0-9]+$'
       required: true
+      secure: false
       description: 'second number to be added'
   outputs:
     result:
