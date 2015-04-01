@@ -1,9 +1,10 @@
 microservice:
+  spec_version: '2.0'
   name: 'add'
   description: 'adds two integers together!'
   docker_image: 'imightbeinatree/integer_add'
-  docker_image_tag: '0.10'
-  github_url: 'https://github.com/imightbeinatree/add'
+  docker_image_tag: '0.11'
+  repo_url: 'https://github.com/imightbeinatree/add'
   docker_hub_url: 'https://registry.hub.docker.com/u/imightbeinatree/integer_add/'
   category: 'math'
   tags: ['math', 'addition', 'integers']
